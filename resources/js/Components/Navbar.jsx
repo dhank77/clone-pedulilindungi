@@ -9,8 +9,8 @@ export default function Navbar() {
             <div className="lg:container flex flex-col lg:flex-row">
                 <div className="flex items-center justify-between pr-8 py-5">
                     <div>
-                        <Link href="/" className="uppercase font-semibold ">
-                            <img src="https://pedulilindungi.id/assets/logo-with-text.svg" alt="peduliid" className="w-36" />
+                        <Link href="/" className="uppercase font-semibold">
+                            <img src="https://pedulilindungi.id/assets/logo-with-text.svg" alt="peduliid" className="w-36 ml-4" />
                         </Link>
                     </div>
                     <div className="lg:hidden">
@@ -26,7 +26,7 @@ export default function Navbar() {
                 </div>
                 <div className={`${isOpen ? 'block' : 'hidden'} lg:flex justify-between w-full flex-col lg:flex-row`}>
                     <div className="flex flex-col lg:flex-row">
-                        <Link className="px-3 py-5 text-gray-700 hover:text-blue-300" href="">Home</Link>
+                        <Link className="px-3 py-5 text-gray-700 hover:text-blue-300" href="/">Home</Link>
                         <Link className="px-3 py-5 text-gray-700 hover:text-blue-300" href="">About</Link>
                         <Link className="px-3 py-5 text-gray-700 hover:text-blue-300" href="">Contact</Link>
                     </div>
