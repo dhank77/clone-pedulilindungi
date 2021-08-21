@@ -9,7 +9,7 @@ export default function App(props) {
             <Head title={props.title} />
             <Navbar/>
 
-            <div className="container py-8 px-2 lg:px-20">
+            <div className="container py-12 px-2 lg:px-20">
                 {props.children}
             </div>
 

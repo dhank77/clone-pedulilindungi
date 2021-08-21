@@ -8,7 +8,7 @@ export default function Sidebar() {
                 <h4>M. Hamdani Ilham Latjoro</h4>
             </div>
             <hr />
-            <div className="flex flex-col items-center py-5 pb-80">
+            <div className="flex flex-col items-center py-5 pb-60">
                 <Link className="px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full" href="#">
                     <div className="flex">
                         <div className="mr-4">
@@ -32,7 +32,7 @@ export default function Sidebar() {
                                 Kotak Masuk
                             </div>
                         </div>
-                        <div className="bg-white px-2 rounded-full">
+                        <div className="bg-white text-blue-500 font-semibold px-2 rounded-full">
                             0
                         </div>
                     </div>

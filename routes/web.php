@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return inertia('Home');
 });
-Route::get('/login', function () {
-    return inertia('Login');
-});
+Route::get('/login', [AuthController::class, 'login']);
+Route::get('/register', [AuthController::class, 'register']);

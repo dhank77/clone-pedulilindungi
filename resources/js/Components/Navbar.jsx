@@ -32,7 +32,7 @@ export default function Navbar() {
                     </div>
                     <div className="flex flex-col lg:flex-row">
                         <Link className="px-3 py-5 text-gray-700 hover:text-blue-300" href="/login">Login</Link>
-                        <Link className="px-3 py-5 text-gray-700 hover:text-blue-300" href="">Register</Link>
+                        <Link className="px-3 py-5 text-gray-700 hover:text-blue-300" href="/register">Register</Link>
                     </div>
                 </div>
             </div>
