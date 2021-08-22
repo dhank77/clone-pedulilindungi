@@ -16,10 +16,9 @@ export default function App(props) {
             <Navbar/>
             <Toaster
                 position="bottom-right"
-            />.
-            <div className="container py-12 px-2 lg:px-20">
-                {props.children}
-            </div>
+            />
+            
+            {props.children}
 
             <Footer />
 

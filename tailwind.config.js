@@ -11,6 +11,9 @@ module.exports = {
       container:{
         center: true,
         padding: '5rem'
+      }, 
+      zIndex:{
+        '-10': '-10',
       }
     },
   },

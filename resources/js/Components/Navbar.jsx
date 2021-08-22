@@ -47,7 +47,7 @@ export default function Navbar() {
                             </Menu.Button>
                             <Menu.Items className={`absolute bg-white z-10 py-2 mt-64 w-56 border border-gray-300 rounded`}>
                                 <div className="w-full hover:bg-gray-100 py-2">
-                                    <Link className="px-3 text-gray-700" href="#">Akun Saya</Link>
+                                    <Link className="px-3 text-gray-700" href={route('profil')}>Akun Saya</Link>
                                 </div>
                                 <div className="w-full hover:bg-gray-100 py-2">
                                     <Link className="px-3 text-gray-700" href="#">Kotak Masuk</Link>

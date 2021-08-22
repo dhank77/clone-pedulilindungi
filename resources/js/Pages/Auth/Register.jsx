@@ -19,7 +19,7 @@ export default function Register({ errors }) {
     }
 
     return (
-        <>
+        <div className="container py-12 px-2 lg:px-20">
             <div className="flex justify-center items-center">
                 <div className="bg-white rounded-lg w-full lg:w-2/5 antialiased overflow-hidden">
                     <div className="p-5">
@@ -64,7 +64,7 @@ export default function Register({ errors }) {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
