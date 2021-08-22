@@ -5,7 +5,7 @@ import App from '../Layouts/App'
 export default function Home() {
 
     return (
-        <App title="Peduli Lindungi">
+        <>
             <div className="flex">
 
                 <Sidebar/>
@@ -45,6 +45,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </App>
+        </>
     )
 }
+
+Home.layout = (page) => <App children={page} title="Peduli Lindungi" />

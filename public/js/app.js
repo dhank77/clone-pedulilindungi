@@ -3159,9 +3159,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ App)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Components_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Components/Navbar */ "./resources/js/Components/Navbar.jsx");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Components_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Components/Navbar */ "./resources/js/Components/Navbar.jsx");
 /* harmony import */ var _Components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Components/Footer */ "./resources/js/Components/Footer.jsx");
+/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-hot-toast */ "./node_modules/react-hot-toast/dist/react-hot-toast.esm.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -3169,17 +3170,292 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function App(props) {
+  var flash = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.usePage)().props.flash;
+  flash.type && react_hot_toast__WEBPACK_IMPORTED_MODULE_5__.default[flash.type](flash.messages);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     className: "bg-gray-200",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.Head, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Head, {
       title: props.title
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Navbar__WEBPACK_IMPORTED_MODULE_1__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Navbar__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_hot_toast__WEBPACK_IMPORTED_MODULE_5__.Toaster, {
+      position: "bottom-right"
+    }), ".", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "container py-12 px-2 lg:px-20",
       children: props.children
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Footer__WEBPACK_IMPORTED_MODULE_3__.default, {})]
   });
 }
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Auth/Login.jsx":
+/*!*******************************************!*\
+  !*** ./resources/js/Pages/Auth/Login.jsx ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Login)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Layouts_App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Layouts/App */ "./resources/js/Layouts/App.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+function Login() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "flex justify-center items-center",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "bg-white rounded-lg w-full lg:w-2/5 antialiased overflow-hidden",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+          className: "p-5",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "font-bold text-lg text-grey-500 mb-4",
+            children: "Masuk"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("hr", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "mb-4",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mb-1 text-lg font-semibold",
+              children: "No. Telepon"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+              type: "text",
+              className: "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
+              placeholder: "Masukkan No. Telepon"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "mb-6",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+              className: "mb-1 text-lg font-semibold",
+              children: "Password"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
+              type: "password",
+              className: "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
+              placeholder: "Masukkan Password"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "mb-2",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+              className: "bg-blue-500 rounded-lg w-full h-12 text-white font-bold",
+              children: "MASUK"
+            })
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          className: "flex items-center bg-blue-200 px-5 py-5",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+            className: "text-center w-full",
+            children: ["Belum punya akun PeduliLindungi ? ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+              href: "/register",
+              className: "font-bold text-blue-500 ml-1",
+              children: " Daftar"
+            })]
+          })
+        })]
+      })
+    })
+  });
+}
+
+Login.layout = function (page) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Layouts_App__WEBPACK_IMPORTED_MODULE_1__.default, {
+    children: page,
+    title: "Login"
+  });
+};
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Auth/Register.jsx":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/Auth/Register.jsx ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Register)
+/* harmony export */ });
+/* harmony import */ var _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia */ "./node_modules/@inertiajs/inertia/dist/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Layouts_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Layouts/App */ "./resources/js/Layouts/App.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+function Register(_ref) {
+  var errors = _ref.errors;
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({
+    name: "",
+    nik: "",
+    no_telp: "",
+    password: "",
+    password_konfirmasi: ""
+  }),
+      _useState2 = _slicedToArray(_useState, 2),
+      values = _useState2[0],
+      setvalues = _useState2[1];
+
+  var changeHandler = function changeHandler(e) {
+    return setvalues(_objectSpread(_objectSpread({}, values), {}, _defineProperty({}, e.target.name, e.target.value)));
+  };
+
+  var submitHandler = function submitHandler(e) {
+    e.preventDefault();
+    _inertiajs_inertia__WEBPACK_IMPORTED_MODULE_0__.Inertia.post(route('register'), values);
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "flex justify-center items-center",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "bg-white rounded-lg w-full lg:w-2/5 antialiased overflow-hidden",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "p-5",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("form", {
+            onSubmit: submitHandler,
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              className: "font-bold text-2xl text-grey-500 mb-4",
+              children: "Daftar Vaksinasi"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("hr", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+              className: "mb-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                className: "mb-1 text-lg font-semibold",
+                children: "Nama Lengkap"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                type: "text",
+                value: values.name,
+                onChange: changeHandler,
+                name: "name",
+                className: "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
+                placeholder: "Masukkan Nama Lengkap"
+              }), errors && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                className: "text-red-700",
+                children: errors.name
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+              className: "mb-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                className: "mb-1 text-lg font-semibold",
+                children: "No KTP"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                type: "number",
+                value: values.nik,
+                onChange: changeHandler,
+                name: "nik",
+                className: "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
+                placeholder: "Masukkan No KTP"
+              }), errors && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                className: "text-red-700",
+                children: errors.nik
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+              className: "mb-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                className: "mb-1 text-lg font-semibold",
+                children: "No. Telepon"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                type: "number",
+                value: values.no_telp,
+                onChange: changeHandler,
+                name: "no_telp",
+                className: "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
+                placeholder: "Masukkan No. Telepon"
+              }), errors && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                className: "text-red-700",
+                children: errors.no_telp
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+              className: "mb-4",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                className: "mb-1 text-lg font-semibold",
+                children: "Password"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                type: "password",
+                value: values.password,
+                onChange: changeHandler,
+                name: "password",
+                className: "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
+                placeholder: "Masukkan Password"
+              }), errors && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                className: "text-red-700",
+                children: errors.password
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+              className: "mb-6",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                className: "mb-1 text-lg font-semibold",
+                children: "Konfirmasi Password"
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+                type: "password",
+                value: values.password_konfirmasi,
+                onChange: changeHandler,
+                name: "password_konfirmasi",
+                className: "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
+                placeholder: "Masukkan Konfirmasi Password"
+              }), errors && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+                className: "text-red-700",
+                children: errors.password_konfirmasi
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+              className: "mb-2",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
+                type: "submit",
+                className: "bg-blue-500 rounded-lg w-full h-12 text-white font-bold",
+                children: "DAFTAR"
+              })
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "flex items-center bg-blue-200 px-5 py-5",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+            className: "text-center w-full",
+            children: ["Sudah punya akun PeduliLindungi ? ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+              href: "/login",
+              className: "font-bold text-blue-500 ml-1",
+              children: " Login"
+            })]
+          })
+        })]
+      })
+    })
+  });
+}
+
+Register.layout = function (page) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Layouts_App__WEBPACK_IMPORTED_MODULE_2__.default, {
+    children: page,
+    title: "Daftar Vaksinasi"
+  });
+};
 
 /***/ }),
 
@@ -3203,9 +3479,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function Home() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Layouts_App__WEBPACK_IMPORTED_MODULE_2__.default, {
-    title: "Peduli Lindungi",
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
       className: "flex",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Components_Sidebar__WEBPACK_IMPORTED_MODULE_1__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
@@ -3270,200 +3546,12 @@ function Home() {
   });
 }
 
-/***/ }),
-
-/***/ "./resources/js/Pages/Login.jsx":
-/*!**************************************!*\
-  !*** ./resources/js/Pages/Login.jsx ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Login)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Layouts_App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Layouts/App */ "./resources/js/Layouts/App.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-function Login() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Layouts_App__WEBPACK_IMPORTED_MODULE_1__.default, {
-    title: "Login",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      className: "flex justify-center items-center",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "bg-white rounded-lg w-full lg:w-2/5 antialiased overflow-hidden",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-          className: "p-5",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-            className: "font-bold text-lg text-grey-500 mb-4",
-            children: "Masuk"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("hr", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-            className: "mb-4",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-              className: "mb-1 text-lg font-semibold",
-              children: "No. Telepon"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-              type: "text",
-              "class": "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
-              placeholder: "Masukkan No. Telepon"
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-            className: "mb-6",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-              className: "mb-1 text-lg font-semibold",
-              children: "Password"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-              type: "password",
-              "class": "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
-              placeholder: "Masukkan Password"
-            })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-            className: "mb-2",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-              className: "bg-blue-500 rounded-lg w-full h-12 text-white font-bold",
-              children: "MASUK"
-            })
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          className: "flex items-center bg-blue-200 px-5 py-5",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-            className: "text-center w-full",
-            children: ["Belum punya akun PeduliLindungi ? ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-              href: "/register",
-              className: "font-bold text-blue-500 ml-1",
-              children: " Daftar"
-            })]
-          })
-        })]
-      })
-    })
+Home.layout = function (page) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Layouts_App__WEBPACK_IMPORTED_MODULE_2__.default, {
+    children: page,
+    title: "Peduli Lindungi"
   });
-}
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Register.jsx":
-/*!*****************************************!*\
-  !*** ./resources/js/Pages/Register.jsx ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Register)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Layouts_App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Layouts/App */ "./resources/js/Layouts/App.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-function Register() {
-  var submit = function submit(e) {
-    e.preventDefault;
-  };
-
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Layouts_App__WEBPACK_IMPORTED_MODULE_1__.default, {
-    title: "Daftar Vaksinasi",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      className: "flex justify-center items-center",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        className: "bg-white rounded-lg w-full lg:w-2/5 antialiased overflow-hidden",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          className: "p-5",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
-            onSubmit: function onSubmit(e) {
-              return submit();
-            },
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-              className: "font-bold text-2xl text-grey-500 mb-4",
-              children: "Daftar Vaksinasi"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("hr", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-                className: "mb-1 text-lg font-semibold",
-                children: "Nama Lengkap"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-                type: "text",
-                name: "name",
-                className: "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
-                placeholder: "Masukkan Nama Lengkap"
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-                className: "mb-1 text-lg font-semibold",
-                children: "No KTP"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-                type: "text",
-                name: "nik",
-                className: "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
-                placeholder: "Masukkan No KTP"
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-                className: "mb-1 text-lg font-semibold",
-                children: "No. Telepon"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-                type: "text",
-                name: "no_telp",
-                className: "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
-                placeholder: "Masukkan No. Telepon"
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-              className: "mb-4",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-                className: "mb-1 text-lg font-semibold",
-                children: "Password"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-                type: "password",
-                name: "password",
-                className: "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
-                placeholder: "Masukkan Password"
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-              className: "mb-6",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-                className: "mb-1 text-lg font-semibold",
-                children: "Konfirmasi Password"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
-                type: "password",
-                name: "password_konfirmasi",
-                className: "w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200",
-                placeholder: "Masukkan Konfirmasi Password"
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-              className: "mb-2",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-                type: "submit",
-                className: "bg-blue-500 rounded-lg w-full h-12 text-white font-bold",
-                children: "DAFTAR"
-              })
-            })]
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          className: "flex items-center bg-blue-200 px-5 py-5",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-            className: "text-center w-full",
-            children: ["Sudah punya akun PeduliLindungi ? ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-              href: "/login",
-              className: "font-bold text-blue-500 ml-1",
-              children: " Login"
-            })]
-          })
-        })]
-      })
-    })
-  });
-}
+};
 
 /***/ }),
 
@@ -4155,6 +4243,27 @@ module.exports = function GetIntrinsic(name, allowMissing) {
 	}
 	return value;
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/goober/dist/goober.modern.js":
+/*!***************************************************!*\
+  !*** ./node_modules/goober/dist/goober.modern.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "css": () => (/* binding */ p),
+/* harmony export */   "extractCss": () => (/* binding */ r),
+/* harmony export */   "glob": () => (/* binding */ g),
+/* harmony export */   "keyframes": () => (/* binding */ b),
+/* harmony export */   "setup": () => (/* binding */ h),
+/* harmony export */   "styled": () => (/* binding */ j)
+/* harmony export */ });
+let e={data:""},t=t=>"object"==typeof window?((t?t.querySelector("#_goober"):window._goober)||Object.assign((t||document.head).appendChild(document.createElement("style")),{innerHTML:" ",id:"_goober"})).firstChild:t||e,r=e=>{let r=t(e),l=r.data;return r.data="",l},l=/(?:([\u0080-\uFFFF\w-%@]+) *:? *([^{;]+?);|([^;}{]*?) *{)|(})/g,a=/\/\*[^]*?\*\/|\s\s+|\n/g,o=(e,t)=>{let r,l="",a="",n="";for(let c in e){let s=e[c];"object"==typeof s?(r=t?t.replace(/([^,])+/g,e=>c.replace(/([^,])+/g,t=>/&/.test(t)?t.replace(/&/g,e):e?e+" "+t:t)):c,a+="@"==c[0]?"f"==c[1]?o(s,c):c+"{"+o(s,"k"==c[1]?"":t)+"}":o(s,r)):"@"==c[0]&&"i"==c[1]?l=c+" "+s+";":(c=c.replace(/[A-Z]/g,"-$&").toLowerCase(),n+=o.p?o.p(c,s):c+":"+s+";")}return n[0]?(r=t?t+"{"+n+"}":n,l+r+a):l+a},n={},c=e=>{let t="";for(let r in e)t+=r+("object"==typeof e[r]?c(e[r]):e[r]);return t},s=(e,t,r,s,i)=>{let p="object"==typeof e?c(e):e,u=n[p]||(n[p]=(e=>{let t=0,r=11;for(;t<e.length;)r=101*r+e.charCodeAt(t++)>>>0;return"go"+r})(p));if(!n[u]){let t="object"==typeof e?e:(e=>{let t,r=[{}];for(;t=l.exec(e.replace(a,""));)t[4]&&r.shift(),t[3]?r.unshift(r[0][t[3]]=r[0][t[3]]||{}):t[4]||(r[0][t[1]]=t[2]);return r[0]})(e);n[u]=o(i?{["@keyframes "+u]:t}:t,r?"":"."+u)}return((e,t,r)=>{-1==t.data.indexOf(e)&&(t.data=r?e+t.data:t.data+e)})(n[u],t,s),u},i=(e,t,r)=>e.reduce((e,l,a)=>{let n=t[a];if(n&&n.call){let e=n(r),t=e&&e.props&&e.props.className||/^go/.test(e)&&e;n=t?"."+t:e&&"object"==typeof e?e.props?"":o(e,""):e}return e+l+(null==n?"":n)},"");function p(e){let r=this||{},l=e.call?e(r.p):e;return s(l.unshift?l.raw?i(l,[].slice.call(arguments,1),r.p):l.reduce((e,t)=>t?Object.assign(e,t.call?t(r.p):t):e,{}):l,t(r.target),r.g,r.o,r.k)}let u,f,d,g=p.bind({g:1}),b=p.bind({k:1});function h(e,t,r,l){o.p=t,u=e,f=r,d=l}function j(e,t){let r=this||{};return function(){let l=arguments;function a(o,n){let c=Object.assign({},o),s=c.className||a.className;r.p=Object.assign({theme:f&&f()},c),r.o=/ *go\d+/.test(s),c.className=p.apply(r,l)+(s?" "+s:""),t&&(c.ref=n);let i=c.as||e;return delete c.as,d&&i[0]&&d(c),u(i,c)}return t?t(a):a}}
 
 
 /***/ }),
@@ -33695,6 +33804,764 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-hot-toast/dist/react-hot-toast.esm.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/react-hot-toast/dist/react-hot-toast.esm.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "CheckmarkIcon": () => (/* binding */ CheckmarkIcon),
+/* harmony export */   "ErrorIcon": () => (/* binding */ ErrorIcon),
+/* harmony export */   "LoaderIcon": () => (/* binding */ LoaderIcon),
+/* harmony export */   "ToastBar": () => (/* binding */ ToastBar),
+/* harmony export */   "ToastIcon": () => (/* binding */ ToastIcon),
+/* harmony export */   "Toaster": () => (/* binding */ Toaster),
+/* harmony export */   "resolveValue": () => (/* binding */ resolveValue),
+/* harmony export */   "toast": () => (/* binding */ toast),
+/* harmony export */   "useToaster": () => (/* binding */ useToaster),
+/* harmony export */   "useToasterStore": () => (/* binding */ useStore)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var goober__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! goober */ "./node_modules/goober/dist/goober.modern.js");
+
+
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function _taggedTemplateLiteralLoose(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
+
+  strings.raw = raw;
+  return strings;
+}
+
+var isFunction = function isFunction(valOrFunction) {
+  return typeof valOrFunction === 'function';
+};
+
+var resolveValue = function resolveValue(valOrFunction, arg) {
+  return isFunction(valOrFunction) ? valOrFunction(arg) : valOrFunction;
+};
+
+var genId = /*#__PURE__*/function () {
+  var count = 0;
+  return function () {
+    return (++count).toString();
+  };
+}();
+var createRectRef = function createRectRef(onRect) {
+  return function (el) {
+    if (el) {
+      setTimeout(function () {
+        var boundingRect = el.getBoundingClientRect();
+        onRect(boundingRect);
+      });
+    }
+  };
+};
+var prefersReducedMotion = /*#__PURE__*/function () {
+  // Cache result
+  var shouldReduceMotion = undefined;
+  return function () {
+    if (shouldReduceMotion === undefined) {
+      var mediaQuery = matchMedia('(prefers-reduced-motion: reduce)');
+      shouldReduceMotion = !mediaQuery || mediaQuery.matches;
+    }
+
+    return shouldReduceMotion;
+  };
+}();
+
+var TOAST_LIMIT = 20;
+var ActionType;
+
+(function (ActionType) {
+  ActionType[ActionType["ADD_TOAST"] = 0] = "ADD_TOAST";
+  ActionType[ActionType["UPDATE_TOAST"] = 1] = "UPDATE_TOAST";
+  ActionType[ActionType["UPSERT_TOAST"] = 2] = "UPSERT_TOAST";
+  ActionType[ActionType["DISMISS_TOAST"] = 3] = "DISMISS_TOAST";
+  ActionType[ActionType["REMOVE_TOAST"] = 4] = "REMOVE_TOAST";
+  ActionType[ActionType["START_PAUSE"] = 5] = "START_PAUSE";
+  ActionType[ActionType["END_PAUSE"] = 6] = "END_PAUSE";
+})(ActionType || (ActionType = {}));
+
+var toastTimeouts = /*#__PURE__*/new Map();
+
+var addToRemoveQueue = function addToRemoveQueue(toastId) {
+  if (toastTimeouts.has(toastId)) {
+    return;
+  }
+
+  var timeout = setTimeout(function () {
+    toastTimeouts["delete"](toastId);
+    dispatch({
+      type: ActionType.REMOVE_TOAST,
+      toastId: toastId
+    });
+  }, 1000);
+  toastTimeouts.set(toastId, timeout);
+};
+
+var clearFromRemoveQueue = function clearFromRemoveQueue(toastId) {
+  var timeout = toastTimeouts.get(toastId);
+
+  if (timeout) {
+    clearTimeout(timeout);
+  }
+};
+
+var reducer = function reducer(state, action) {
+  switch (action.type) {
+    case ActionType.ADD_TOAST:
+      return _extends({}, state, {
+        toasts: [action.toast].concat(state.toasts).slice(0, TOAST_LIMIT)
+      });
+
+    case ActionType.UPDATE_TOAST:
+      //  ! Side effects !
+      if (action.toast.id) {
+        clearFromRemoveQueue(action.toast.id);
+      }
+
+      return _extends({}, state, {
+        toasts: state.toasts.map(function (t) {
+          return t.id === action.toast.id ? _extends({}, t, action.toast) : t;
+        })
+      });
+
+    case ActionType.UPSERT_TOAST:
+      var toast = action.toast;
+      return state.toasts.find(function (t) {
+        return t.id === toast.id;
+      }) ? reducer(state, {
+        type: ActionType.UPDATE_TOAST,
+        toast: toast
+      }) : reducer(state, {
+        type: ActionType.ADD_TOAST,
+        toast: toast
+      });
+
+    case ActionType.DISMISS_TOAST:
+      var toastId = action.toastId; // ! Side effects ! - This could be execrated into a dismissToast() action, but I'll keep it here for simplicity
+
+      if (toastId) {
+        addToRemoveQueue(toastId);
+      } else {
+        state.toasts.forEach(function (toast) {
+          addToRemoveQueue(toast.id);
+        });
+      }
+
+      return _extends({}, state, {
+        toasts: state.toasts.map(function (t) {
+          return t.id === toastId || toastId === undefined ? _extends({}, t, {
+            visible: false
+          }) : t;
+        })
+      });
+
+    case ActionType.REMOVE_TOAST:
+      if (action.toastId === undefined) {
+        return _extends({}, state, {
+          toasts: []
+        });
+      }
+
+      return _extends({}, state, {
+        toasts: state.toasts.filter(function (t) {
+          return t.id !== action.toastId;
+        })
+      });
+
+    case ActionType.START_PAUSE:
+      return _extends({}, state, {
+        pausedAt: action.time
+      });
+
+    case ActionType.END_PAUSE:
+      var diff = action.time - (state.pausedAt || 0);
+      return _extends({}, state, {
+        pausedAt: undefined,
+        toasts: state.toasts.map(function (t) {
+          return _extends({}, t, {
+            pauseDuration: t.pauseDuration + diff
+          });
+        })
+      });
+  }
+};
+var listeners = [];
+var memoryState = {
+  toasts: [],
+  pausedAt: undefined
+};
+var dispatch = function dispatch(action) {
+  memoryState = reducer(memoryState, action);
+  listeners.forEach(function (listener) {
+    listener(memoryState);
+  });
+};
+var defaultTimeouts = {
+  blank: 4000,
+  error: 4000,
+  success: 2000,
+  loading: Infinity,
+  custom: 4000
+};
+var useStore = function useStore(toastOptions) {
+  if (toastOptions === void 0) {
+    toastOptions = {};
+  }
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(memoryState),
+      state = _useState[0],
+      setState = _useState[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    listeners.push(setState);
+    return function () {
+      var index = listeners.indexOf(setState);
+
+      if (index > -1) {
+        listeners.splice(index, 1);
+      }
+    };
+  }, [state]);
+  var mergedToasts = state.toasts.map(function (t) {
+    var _toastOptions$t$type, _toastOptions, _toastOptions$t$type2;
+
+    return _extends({}, toastOptions, toastOptions[t.type], t, {
+      duration: t.duration || ((_toastOptions$t$type = toastOptions[t.type]) == null ? void 0 : _toastOptions$t$type.duration) || ((_toastOptions = toastOptions) == null ? void 0 : _toastOptions.duration) || defaultTimeouts[t.type],
+      style: _extends({}, toastOptions.style, (_toastOptions$t$type2 = toastOptions[t.type]) == null ? void 0 : _toastOptions$t$type2.style, t.style)
+    });
+  });
+  return _extends({}, state, {
+    toasts: mergedToasts
+  });
+};
+
+var createToast = function createToast(message, type, opts) {
+  if (type === void 0) {
+    type = 'blank';
+  }
+
+  return _extends({
+    createdAt: Date.now(),
+    visible: true,
+    type: type,
+    ariaProps: {
+      role: 'status',
+      'aria-live': 'polite'
+    },
+    message: message,
+    pauseDuration: 0
+  }, opts, {
+    id: (opts == null ? void 0 : opts.id) || genId()
+  });
+};
+
+var createHandler = function createHandler(type) {
+  return function (message, options) {
+    var toast = createToast(message, type, options);
+    dispatch({
+      type: ActionType.UPSERT_TOAST,
+      toast: toast
+    });
+    return toast.id;
+  };
+};
+
+var toast = function toast(message, opts) {
+  return createHandler('blank')(message, opts);
+};
+
+toast.error = /*#__PURE__*/createHandler('error');
+toast.success = /*#__PURE__*/createHandler('success');
+toast.loading = /*#__PURE__*/createHandler('loading');
+toast.custom = /*#__PURE__*/createHandler('custom');
+
+toast.dismiss = function (toastId) {
+  dispatch({
+    type: ActionType.DISMISS_TOAST,
+    toastId: toastId
+  });
+};
+
+toast.remove = function (toastId) {
+  return dispatch({
+    type: ActionType.REMOVE_TOAST,
+    toastId: toastId
+  });
+};
+
+toast.promise = function (promise, msgs, opts) {
+  var id = toast.loading(msgs.loading, _extends({}, opts, opts == null ? void 0 : opts.loading));
+  promise.then(function (p) {
+    toast.success(resolveValue(msgs.success, p), _extends({
+      id: id
+    }, opts, opts == null ? void 0 : opts.success));
+    return p;
+  })["catch"](function (e) {
+    toast.error(resolveValue(msgs.error, e), _extends({
+      id: id
+    }, opts, opts == null ? void 0 : opts.error));
+  });
+  return promise;
+};
+
+var useToaster = function useToaster(toastOptions) {
+  var _useStore = useStore(toastOptions),
+      toasts = _useStore.toasts,
+      pausedAt = _useStore.pausedAt;
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (pausedAt) {
+      return;
+    }
+
+    var now = Date.now();
+    var timeouts = toasts.map(function (t) {
+      if (t.duration === Infinity) {
+        return;
+      }
+
+      var durationLeft = (t.duration || 0) + t.pauseDuration - (now - t.createdAt);
+
+      if (durationLeft < 0) {
+        if (t.visible) {
+          toast.dismiss(t.id);
+        }
+
+        return;
+      }
+
+      return setTimeout(function () {
+        return toast.dismiss(t.id);
+      }, durationLeft);
+    });
+    return function () {
+      timeouts.forEach(function (timeout) {
+        return timeout && clearTimeout(timeout);
+      });
+    };
+  }, [toasts, pausedAt]);
+  var handlers = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
+    return {
+      startPause: function startPause() {
+        dispatch({
+          type: ActionType.START_PAUSE,
+          time: Date.now()
+        });
+      },
+      endPause: function endPause() {
+        if (pausedAt) {
+          dispatch({
+            type: ActionType.END_PAUSE,
+            time: Date.now()
+          });
+        }
+      },
+      updateHeight: function updateHeight(toastId, height) {
+        return dispatch({
+          type: ActionType.UPDATE_TOAST,
+          toast: {
+            id: toastId,
+            height: height
+          }
+        });
+      },
+      calculateOffset: function calculateOffset(toast, opts) {
+        var _relevantToasts$filte;
+
+        var _ref = opts || {},
+            _ref$reverseOrder = _ref.reverseOrder,
+            reverseOrder = _ref$reverseOrder === void 0 ? false : _ref$reverseOrder,
+            _ref$gutter = _ref.gutter,
+            gutter = _ref$gutter === void 0 ? 8 : _ref$gutter,
+            defaultPosition = _ref.defaultPosition;
+
+        var relevantToasts = toasts.filter(function (t) {
+          return (t.position || defaultPosition) === (toast.position || defaultPosition) && t.height;
+        });
+        var toastIndex = relevantToasts.findIndex(function (t) {
+          return t.id === toast.id;
+        });
+        var toastsBefore = relevantToasts.filter(function (toast, i) {
+          return i < toastIndex && toast.visible;
+        }).length;
+
+        var offset = (_relevantToasts$filte = relevantToasts.filter(function (t) {
+          return t.visible;
+        })).slice.apply(_relevantToasts$filte, reverseOrder ? [toastsBefore + 1] : [0, toastsBefore]).reduce(function (acc, t) {
+          return acc + (t.height || 0) + gutter;
+        }, 0);
+
+        return offset;
+      }
+    };
+  }, [toasts, pausedAt]);
+  return {
+    toasts: toasts,
+    handlers: handlers
+  };
+};
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteralLoose(["\n  width: 20px;\n  opacity: 0;\n  height: 20px;\n  border-radius: 10px;\n  background: ", ";\n  position: relative;\n  transform: rotate(45deg);\n\n  animation: ", " 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)\n    forwards;\n  animation-delay: 100ms;\n\n  &:after,\n  &:before {\n    content: '';\n    animation: ", " 0.15s ease-out forwards;\n    animation-delay: 150ms;\n    position: absolute;\n    border-radius: 3px;\n    opacity: 0;\n    background: ", ";\n    bottom: 9px;\n    left: 4px;\n    height: 2px;\n    width: 12px;\n  }\n\n  &:before {\n    animation: ", " 0.15s ease-out forwards;\n    animation-delay: 180ms;\n    transform: rotate(90deg);\n  }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteralLoose(["\nfrom {\n  transform: scale(0) rotate(90deg);\n\topacity: 0;\n}\nto {\n  transform: scale(1) rotate(90deg);\n\topacity: 1;\n}"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteralLoose(["\nfrom {\n  transform: scale(0);\n  opacity: 0;\n}\nto {\n  transform: scale(1);\n  opacity: 1;\n}"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteralLoose(["\nfrom {\n  transform: scale(0) rotate(45deg);\n\topacity: 0;\n}\nto {\n transform: scale(1) rotate(45deg);\n  opacity: 1;\n}"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var circleAnimation = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject());
+var firstLineAnimation = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject2());
+var secondLineAnimation = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject3());
+var ErrorIcon = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject4(), function (p) {
+  return p.primary || '#ff4b4b';
+}, circleAnimation, firstLineAnimation, function (p) {
+  return p.secondary || '#fff';
+}, secondLineAnimation);
+
+function _templateObject2$1() {
+  var data = _taggedTemplateLiteralLoose(["\n  width: 12px;\n  height: 12px;\n  box-sizing: border-box;\n  border: 2px solid;\n  border-radius: 100%;\n  border-color: ", ";\n  border-right-color: ", ";\n  animation: ", " 1s linear infinite;\n"]);
+
+  _templateObject2$1 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject$1() {
+  var data = _taggedTemplateLiteralLoose(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"]);
+
+  _templateObject$1 = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var rotate = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject$1());
+var LoaderIcon = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject2$1(), function (p) {
+  return p.secondary || '#e0e0e0';
+}, function (p) {
+  return p.primary || '#616161';
+}, rotate);
+
+function _templateObject3$1() {
+  var data = _taggedTemplateLiteralLoose(["\n  width: 20px;\n  opacity: 0;\n  height: 20px;\n  border-radius: 10px;\n  background: ", ";\n  position: relative;\n  transform: rotate(45deg);\n\n  animation: ", " 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)\n    forwards;\n  animation-delay: 100ms;\n  &:after {\n    content: '';\n    box-sizing: border-box;\n    animation: ", " 0.2s ease-out forwards;\n    opacity: 0;\n    animation-delay: 200ms;\n    position: absolute;\n    border-right: 2px solid;\n    border-bottom: 2px solid;\n    border-color: ", ";\n    bottom: 6px;\n    left: 6px;\n    height: 10px;\n    width: 6px;\n  }\n"]);
+
+  _templateObject3$1 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2$2() {
+  var data = _taggedTemplateLiteralLoose(["\n0% {\n\theight: 0;\n\twidth: 0;\n\topacity: 0;\n}\n40% {\n  height: 0;\n\twidth: 6px;\n\topacity: 1;\n}\n100% {\n  opacity: 1;\n  height: 10px;\n}"]);
+
+  _templateObject2$2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject$2() {
+  var data = _taggedTemplateLiteralLoose(["\nfrom {\n  transform: scale(0) rotate(45deg);\n\topacity: 0;\n}\nto {\n  transform: scale(1) rotate(45deg);\n\topacity: 1;\n}"]);
+
+  _templateObject$2 = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var circleAnimation$1 = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject$2());
+var checkmarkAnimation = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject2$2());
+var CheckmarkIcon = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject3$1(), function (p) {
+  return p.primary || '#61d345';
+}, circleAnimation$1, checkmarkAnimation, function (p) {
+  return p.secondary || '#fff';
+});
+
+function _templateObject4$1() {
+  var data = _taggedTemplateLiteralLoose(["\n  position: relative;\n  transform: scale(0.6);\n  opacity: 0.4;\n  min-width: 20px;\n  animation: ", " 0.3s 0.12s cubic-bezier(0.175, 0.885, 0.32, 1.275)\n    forwards;\n"]);
+
+  _templateObject4$1 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3$2() {
+  var data = _taggedTemplateLiteralLoose(["\nfrom {\n  transform: scale(0.6);\n  opacity: 0.4;\n}\nto {\n  transform: scale(1);\n  opacity: 1;\n}"]);
+
+  _templateObject3$2 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2$3() {
+  var data = _taggedTemplateLiteralLoose(["\n  position: relative;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-width: 20px;\n  min-height: 20px;\n"]);
+
+  _templateObject2$3 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject$3() {
+  var data = _taggedTemplateLiteralLoose(["\n  position: absolute;\n"]);
+
+  _templateObject$3 = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+var StatusWrapper = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject$3());
+var IndicatorWrapper = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject2$3());
+var enter = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)( /*#__PURE__*/_templateObject3$2());
+var AnimatedIconWrapper = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject4$1(), enter);
+var ToastIcon = function ToastIcon(_ref) {
+  var toast = _ref.toast;
+  var icon = toast.icon,
+      type = toast.type,
+      iconTheme = toast.iconTheme;
+
+  if (icon !== undefined) {
+    if (typeof icon === 'string') {
+      return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(AnimatedIconWrapper, null, icon);
+    } else {
+      return icon;
+    }
+  }
+
+  if (type === 'blank') {
+    return null;
+  }
+
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(IndicatorWrapper, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(LoaderIcon, Object.assign({}, iconTheme)), type !== 'loading' && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(StatusWrapper, null, type === 'error' ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ErrorIcon, Object.assign({}, iconTheme)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(CheckmarkIcon, Object.assign({}, iconTheme))));
+};
+
+function _templateObject2$4() {
+  var data = _taggedTemplateLiteralLoose(["\n  display: flex;\n  justify-content: center;\n  margin: 4px 10px;\n  color: inherit;\n  flex: 1 1 auto;\n"]);
+
+  _templateObject2$4 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject$4() {
+  var data = _taggedTemplateLiteralLoose(["\n  display: flex;\n  align-items: center;\n  background: #fff;\n  color: #363636;\n  line-height: 1.3;\n  will-change: transform;\n  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1), 0 3px 3px rgba(0, 0, 0, 0.05);\n  max-width: 350px;\n  pointer-events: auto;\n  padding: 8px 10px;\n  border-radius: 8px;\n"]);
+
+  _templateObject$4 = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var enterAnimation = function enterAnimation(factor) {
+  return "\n0% {transform: translate3d(0," + factor * -200 + "%,0) scale(.6); opacity:.5;}\n100% {transform: translate3d(0,0,0) scale(1); opacity:1;}\n";
+};
+
+var exitAnimation = function exitAnimation(factor) {
+  return "\n0% {transform: translate3d(0,0,-1px) scale(1); opacity:1;}\n100% {transform: translate3d(0," + factor * -150 + "%,-1px) scale(.6); opacity:0;}\n";
+};
+
+var fadeInAnimation = "0%{opacity:0;} 100%{opacity:1;}";
+var fadeOutAnimation = "0%{opacity:1;} 100%{opacity:0;}";
+var ToastBarBase = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div', react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)( /*#__PURE__*/_templateObject$4());
+var Message = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.styled)('div')( /*#__PURE__*/_templateObject2$4());
+
+var getAnimationStyle = function getAnimationStyle(position, visible) {
+  var top = position.includes('top');
+  var factor = top ? 1 : -1;
+
+  var _ref = prefersReducedMotion() ? [fadeInAnimation, fadeOutAnimation] : [enterAnimation(factor), exitAnimation(factor)],
+      enter = _ref[0],
+      exit = _ref[1];
+
+  return {
+    animation: visible ? (0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)(enter) + " 0.35s cubic-bezier(.21,1.02,.73,1) forwards" : (0,goober__WEBPACK_IMPORTED_MODULE_1__.keyframes)(exit) + " 0.4s forwards cubic-bezier(.06,.71,.55,1)"
+  };
+};
+
+var ToastBar = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(function (_ref2) {
+  var toast = _ref2.toast,
+      position = _ref2.position,
+      style = _ref2.style,
+      children = _ref2.children;
+  var animationStyle = toast != null && toast.height ? getAnimationStyle(toast.position || position || 'top-center', toast.visible) : {
+    opacity: 0
+  };
+  var icon = (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToastIcon, {
+    toast: toast
+  });
+  var message = (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(Message, Object.assign({}, toast.ariaProps), resolveValue(toast.message, toast));
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToastBarBase, {
+    className: toast.className,
+    style: _extends({}, animationStyle, style, toast.style)
+  }, typeof children === 'function' ? children({
+    icon: icon,
+    message: message
+  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, icon, message));
+});
+
+function _templateObject$5() {
+  var data = _taggedTemplateLiteralLoose(["\n  z-index: 9999;\n  > * {\n    pointer-events: auto;\n  }\n"]);
+
+  _templateObject$5 = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+(0,goober__WEBPACK_IMPORTED_MODULE_1__.setup)(react__WEBPACK_IMPORTED_MODULE_0__.createElement);
+
+var getPositionStyle = function getPositionStyle(position, offset) {
+  var top = position.includes('top');
+  var verticalStyle = top ? {
+    top: 0
+  } : {
+    bottom: 0
+  };
+  var horizontalStyle = position.includes('center') ? {
+    justifyContent: 'center'
+  } : position.includes('right') ? {
+    justifyContent: 'flex-end'
+  } : {};
+  return _extends({
+    left: 0,
+    right: 0,
+    display: 'flex',
+    position: 'absolute',
+    transition: prefersReducedMotion() ? undefined : "all 230ms cubic-bezier(.21,1.02,.73,1)",
+    transform: "translateY(" + offset * (top ? 1 : -1) + "px)"
+  }, verticalStyle, horizontalStyle);
+};
+
+var activeClass = /*#__PURE__*/(0,goober__WEBPACK_IMPORTED_MODULE_1__.css)( /*#__PURE__*/_templateObject$5());
+var DEFAULT_OFFSET = 16;
+var Toaster = function Toaster(_ref) {
+  var reverseOrder = _ref.reverseOrder,
+      _ref$position = _ref.position,
+      position = _ref$position === void 0 ? 'top-center' : _ref$position,
+      toastOptions = _ref.toastOptions,
+      gutter = _ref.gutter,
+      children = _ref.children,
+      containerStyle = _ref.containerStyle,
+      containerClassName = _ref.containerClassName;
+
+  var _useToaster = useToaster(toastOptions),
+      toasts = _useToaster.toasts,
+      handlers = _useToaster.handlers;
+
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    style: _extends({
+      position: 'fixed',
+      zIndex: 9999,
+      top: DEFAULT_OFFSET,
+      left: DEFAULT_OFFSET,
+      right: DEFAULT_OFFSET,
+      bottom: DEFAULT_OFFSET,
+      pointerEvents: 'none'
+    }, containerStyle),
+    className: containerClassName,
+    onMouseEnter: handlers.startPause,
+    onMouseLeave: handlers.endPause
+  }, toasts.map(function (t) {
+    var toastPosition = t.position || position;
+    var offset = handlers.calculateOffset(t, {
+      reverseOrder: reverseOrder,
+      gutter: gutter,
+      defaultPosition: position
+    });
+    var positionStyle = getPositionStyle(toastPosition, offset);
+    var ref = t.height ? undefined : createRectRef(function (rect) {
+      handlers.updateHeight(t.id, rect.height);
+    });
+    return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      ref: ref,
+      className: t.visible ? activeClass : '',
+      key: t.id,
+      style: positionStyle
+    }, t.type === 'custom' ? resolveValue(t.message, t) : children ? children(t) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToastBar, {
+      toast: t,
+      position: toastPosition
+    }));
+  }));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toast);
+
+//# sourceMappingURL=react-hot-toast.esm.js.map
+
+
+/***/ }),
+
 /***/ "./node_modules/react/cjs/react-jsx-runtime.development.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/react/cjs/react-jsx-runtime.development.js ***!
@@ -38492,12 +39359,12 @@ module.exports = function getSideChannel() {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
+	"./Auth/Login": "./resources/js/Pages/Auth/Login.jsx",
+	"./Auth/Login.jsx": "./resources/js/Pages/Auth/Login.jsx",
+	"./Auth/Register": "./resources/js/Pages/Auth/Register.jsx",
+	"./Auth/Register.jsx": "./resources/js/Pages/Auth/Register.jsx",
 	"./Home": "./resources/js/Pages/Home.jsx",
-	"./Home.jsx": "./resources/js/Pages/Home.jsx",
-	"./Login": "./resources/js/Pages/Login.jsx",
-	"./Login.jsx": "./resources/js/Pages/Login.jsx",
-	"./Register": "./resources/js/Pages/Register.jsx",
-	"./Register.jsx": "./resources/js/Pages/Register.jsx"
+	"./Home.jsx": "./resources/js/Pages/Home.jsx"
 };
 
 

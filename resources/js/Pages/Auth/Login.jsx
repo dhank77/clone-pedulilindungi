@@ -1,10 +1,10 @@
 import React from 'react'
-import App from '../Layouts/App'
+import App from '../../Layouts/App'
 
 export default function Login() {
 
     return (
-        <App title="Login">
+        <>
             <div className="flex justify-center items-center">
                 <div className="bg-white rounded-lg w-full lg:w-2/5 antialiased overflow-hidden">
                     <div className="p-5">
@@ -13,11 +13,11 @@ export default function Login() {
                         <br />
                         <div className="mb-4">
                             <div className="mb-1 text-lg font-semibold">No. Telepon</div>
-                            <input type="text" class="w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200" placeholder="Masukkan No. Telepon" />
+                            <input type="text" className="w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200" placeholder="Masukkan No. Telepon" />
                         </div>
                         <div className="mb-6">
                             <div className="mb-1 text-lg font-semibold">Password</div>
-                            <input type="password" class="w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200" placeholder="Masukkan Password" />
+                            <input type="password" className="w-full h-12 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-300 border-2 border-gray-300 p-3 bg-gray-200" placeholder="Masukkan Password" />
                         </div>
                         <div className="mb-2">
                             <button className="bg-blue-500 rounded-lg w-full h-12 text-white font-bold">MASUK</button>
@@ -30,6 +30,8 @@ export default function Login() {
                     </div>
                 </div>
             </div>
-        </App>
+        </>
     )
 }
+
+Login.layout = (page) => <App children={page} title="Login" />
