@@ -7,11 +7,11 @@ import toast, { Toaster } from 'react-hot-toast'
 
 export default function App(props) {
 
-    const { flash } = usePage().props;
+    const { flash, user } = usePage().props;
     
     flash.type && toast[flash.type](flash.messages)
     return (
-        <div className="bg-gray-200">
+        <div className={`${user ? 'bg-gray-200' : 'bg-gray-50'}`}>
             <Head title={props.title} />
             <Navbar/>
             <Toaster

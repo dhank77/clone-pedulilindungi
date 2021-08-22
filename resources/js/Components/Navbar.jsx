@@ -8,7 +8,7 @@ export default function Navbar() {
 
     return (
         <div className="border-b border-gray-300 bg-white">
-            <div className="lg:container flex flex-col lg:flex-row">
+            <div className="lg:container flex flex-col lg:flex-row items-center">
                 <div className="flex items-center justify-between pr-8 py-5">
                     <div>
                         <Link href="/" className="uppercase font-semibold">
