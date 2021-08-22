@@ -1,8 +1,11 @@
+import { usePage } from '@inertiajs/inertia-react'
 import React from 'react'
 import Sidebar from '../Components/Sidebar'
 import App from '../Layouts/App'
 
 export default function Home() {
+
+    const { user } = usePage().props;
 
     return (
         <>

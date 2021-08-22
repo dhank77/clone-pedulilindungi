@@ -19,6 +19,7 @@
         "tailwindcss": "^2.2.7"
     },
     "dependencies": {
+        "@headlessui/react": "^1.4.0",
         "@inertiajs/inertia": "^0.10.1",
         "@inertiajs/inertia-react": "^0.7.1",
         "@inertiajs/progress": "^0.2.6",
