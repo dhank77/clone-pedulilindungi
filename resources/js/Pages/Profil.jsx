@@ -52,4 +52,4 @@ export default function Profil() {
     )
 }
 
-Profil.layout = (page) => <App children={page} title="Peduli Lindungi" />
+Profil.layout = (page) => <App children={page} title="Profil - Peduli Lindungi" />

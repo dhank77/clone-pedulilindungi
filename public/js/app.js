@@ -4719,6 +4719,10 @@ function Navbar() {
             className: "px-3 py-5 text-gray-700 hover:text-blue-300",
             href: "#",
             children: "Cara Kerja"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.Link, {
+            className: "px-3 py-5 text-gray-700 hover:text-blue-300",
+            href: "#",
+            children: "Peserta Vaksinasi"
           })]
         }), user ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_headlessui_react__WEBPACK_IMPORTED_MODULE_3__.Menu, {
           as: "div",
@@ -4833,6 +4837,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Sidebar() {
+  var _usePage = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.usePage)(),
+      url = _usePage.url;
+
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     className: "hidden lg:block bg-white mr-8 rounded-xl px-2 w-1/3 flex justify-between flex-col",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
@@ -4843,8 +4850,8 @@ function Sidebar() {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("hr", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "flex flex-col items-center py-5 pb-60",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
-        className: "px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full",
-        href: "#",
+        className: "".concat(url == '/profil' ? 'bg-blue-400 text-white' : '', " mb-1 px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full"),
+        href: route('profil'),
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
           className: "flex",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
@@ -4867,15 +4874,15 @@ function Sidebar() {
           })]
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
-        className: "px-4 py-5 bg-blue-400 rounded-lg w-full",
-        href: "#",
+        className: "".concat(url == '/inbox' ? 'bg-blue-400 text-white' : '', " mb-1 px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full"),
+        href: route('inbox'),
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
           className: "flex justify-between",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
             className: "flex",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("svg", {
               xmlns: "http://www.w3.org/2000/svg",
-              className: "h-6 w-6 mr-4 text-white",
+              className: "h-6 w-6 mr-4 hover:text-white",
               fill: "none",
               viewBox: "0 0 24 24",
               stroke: "currentColor",
@@ -4886,17 +4893,17 @@ function Sidebar() {
                 d: "M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-              className: "text-white",
+              className: "hover:text-white",
               children: "Kotak Masuk"
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-            className: "bg-white text-blue-500 font-semibold px-2 rounded-full",
+            className: "bg-gray-100 hover:bg-white text-blue-500 font-semibold px-2 rounded-full",
             children: "0"
           })]
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
-        className: "px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full",
-        href: "#",
+        className: "".concat(url == '/riwayat' ? 'bg-blue-400 text-white' : '', " mb-1 px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full"),
+        href: route('riwayat'),
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
           className: "flex",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
@@ -4919,8 +4926,8 @@ function Sidebar() {
           })]
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
-        className: "px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full",
-        href: "#",
+        className: "".concat(url == '/sertifikat' ? 'bg-blue-400 text-white' : '', " mb-1 px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full"),
+        href: route('sertifikat'),
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
           className: "flex",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
@@ -5503,6 +5510,53 @@ Home.layout = function (page) {
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Inbox.jsx":
+/*!**************************************!*\
+  !*** ./resources/js/Pages/Inbox.jsx ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Inbox)
+/* harmony export */ });
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Components_Sidebar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Components/Sidebar */ "./resources/js/Components/Sidebar.jsx");
+/* harmony import */ var _Layouts_App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Layouts/App */ "./resources/js/Layouts/App.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+function Inbox() {
+  var user = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.usePage)().props.user;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    className: "container py-12 px-2 lg:px-20",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "flex",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Sidebar__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+        className: "bg-white rounded-xl px-5 py-4 w-full h-4/6",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+          children: "Anda tidak memiliki kotak masuk!"
+        })
+      })]
+    })
+  });
+}
+
+Inbox.layout = function (page) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Layouts_App__WEBPACK_IMPORTED_MODULE_3__.default, {
+    children: page,
+    title: "Kotak Masuk - Peduli Lindungi"
+  });
+};
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Profil.jsx":
 /*!***************************************!*\
   !*** ./resources/js/Pages/Profil.jsx ***!
@@ -5596,7 +5650,129 @@ function Profil() {
 Profil.layout = function (page) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Layouts_App__WEBPACK_IMPORTED_MODULE_3__.default, {
     children: page,
-    title: "Peduli Lindungi"
+    title: "Profil - Peduli Lindungi"
+  });
+};
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Riwayat.jsx":
+/*!****************************************!*\
+  !*** ./resources/js/Pages/Riwayat.jsx ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Riwayat)
+/* harmony export */ });
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Components_Sidebar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Components/Sidebar */ "./resources/js/Components/Sidebar.jsx");
+/* harmony import */ var _Layouts_App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Layouts/App */ "./resources/js/Layouts/App.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+function Riwayat() {
+  var user = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.usePage)().props.user;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    className: "container py-12 px-2 lg:px-20",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "flex",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Sidebar__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        className: "h-4/6 w-full",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          className: "bg-white rounded-xl px-5 py-4",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "flex items-center justify-between mb-1",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              className: "text-xl",
+              children: "Riwayat & Tiket Vaksin"
+            })
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          className: "bg-white rounded-xl px-5 py-4",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "flex items-center justify-between mb-1",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              className: "text-xl",
+              children: "Riwayat & Tiket Vaksin"
+            })
+          })
+        })]
+      })]
+    })
+  });
+}
+
+Riwayat.layout = function (page) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Layouts_App__WEBPACK_IMPORTED_MODULE_3__.default, {
+    children: page,
+    title: "Riwayat - Peduli Lindungi"
+  });
+};
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Sertifikat.jsx":
+/*!*******************************************!*\
+  !*** ./resources/js/Pages/Sertifikat.jsx ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Sertifikat)
+/* harmony export */ });
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Components_Sidebar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Components/Sidebar */ "./resources/js/Components/Sidebar.jsx");
+/* harmony import */ var _Layouts_App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Layouts/App */ "./resources/js/Layouts/App.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+function Sertifikat() {
+  var user = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.usePage)().props.user;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    className: "container py-12 px-2 lg:px-20",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+      className: "flex",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Components_Sidebar__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        className: "h-4/6 w-full",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          className: "bg-white rounded-xl px-5 py-4",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "flex items-center justify-between mb-1",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+              className: "text-xl",
+              children: "Sertifikat Vaksin"
+            })
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+          className: "bg-white rounded-xl px-5 py-4",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "flex items-center justify-between mb-1"
+          })
+        })]
+      })]
+    })
+  });
+}
+
+Sertifikat.layout = function (page) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Layouts_App__WEBPACK_IMPORTED_MODULE_3__.default, {
+    children: page,
+    title: "Sertifikat - Peduli Lindungi"
   });
 };
 
@@ -41412,8 +41588,14 @@ var map = {
 	"./Auth/Register.jsx": "./resources/js/Pages/Auth/Register.jsx",
 	"./Home": "./resources/js/Pages/Home.jsx",
 	"./Home.jsx": "./resources/js/Pages/Home.jsx",
+	"./Inbox": "./resources/js/Pages/Inbox.jsx",
+	"./Inbox.jsx": "./resources/js/Pages/Inbox.jsx",
 	"./Profil": "./resources/js/Pages/Profil.jsx",
-	"./Profil.jsx": "./resources/js/Pages/Profil.jsx"
+	"./Profil.jsx": "./resources/js/Pages/Profil.jsx",
+	"./Riwayat": "./resources/js/Pages/Riwayat.jsx",
+	"./Riwayat.jsx": "./resources/js/Pages/Riwayat.jsx",
+	"./Sertifikat": "./resources/js/Pages/Sertifikat.jsx",
+	"./Sertifikat.jsx": "./resources/js/Pages/Sertifikat.jsx"
 };
 
 

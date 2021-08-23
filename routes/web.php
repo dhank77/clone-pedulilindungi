@@ -27,5 +27,8 @@ Route::post('/register', [AuthController::class, 'check_register']);
 
 Route::middleware('auth')->group(function(){
     Route::get('/profil', [ProfilController::class, 'index'])->name('profil');
+    Route::get('/inbox', [ProfilController::class, 'inbox'])->name('inbox');
+    Route::get('/riwayat', [ProfilController::class, 'riwayat'])->name('riwayat');
+    Route::get('/sertifikat', [ProfilController::class, 'sertifikat'])->name('sertifikat');
 
 });

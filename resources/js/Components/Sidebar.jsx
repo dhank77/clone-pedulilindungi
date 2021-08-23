@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link } from '@inertiajs/inertia-react'
+import { Link, usePage } from '@inertiajs/inertia-react'
 
 export default function Sidebar() {
+    const {url} = usePage();
     return (
         <div className="hidden lg:block bg-white mr-8 rounded-xl px-2 w-1/3 flex justify-between flex-col">
             <div className="p-5">
@@ -9,7 +10,7 @@ export default function Sidebar() {
             </div>
             <hr />
             <div className="flex flex-col items-center py-5 pb-60">
-                <Link className="px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full" href="#">
+                <Link className={`${url == '/profil' ? 'bg-blue-400 text-white' : ''} mb-1 px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full`} href={route('profil')}>
                     <div className="flex">
                         <div className="mr-4">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -22,22 +23,22 @@ export default function Sidebar() {
 
                     </div>
                 </Link>
-                <Link className="px-4 py-5 bg-blue-400 rounded-lg w-full" href="#">
+                <Link className={`${url == '/inbox' ? 'bg-blue-400 text-white' : ''} mb-1 px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full`} href={route('inbox')}>
                     <div className="flex justify-between">
                         <div className="flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-4 hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
                             </svg>
-                            <div className="text-white">
+                            <div className="hover:text-white">
                                 Kotak Masuk
                             </div>
                         </div>
-                        <div className="bg-white text-blue-500 font-semibold px-2 rounded-full">
+                        <div className="bg-gray-100 hover:bg-white text-blue-500 font-semibold px-2 rounded-full">
                             0
                         </div>
                     </div>
                 </Link>
-                <Link className="px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full" href="#">
+                <Link className={`${url == '/riwayat' ? 'bg-blue-400 text-white' : ''} mb-1 px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full`} href={route('riwayat')}>
                     <div className="flex">
                         <div className="mr-4">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -49,7 +50,7 @@ export default function Sidebar() {
                         </div>
                     </div>
                 </Link>
-                <Link className="px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full" href="#">
+                <Link className={`${url == '/sertifikat' ? 'bg-blue-400 text-white' : ''} mb-1 px-4 py-5 hover:bg-blue-300 hover:text-white rounded-lg w-full`} href={route('sertifikat')}>
                     <div className="flex">
                         <div className="mr-4">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
