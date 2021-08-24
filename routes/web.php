@@ -25,6 +25,8 @@ Route::post('/login', [AuthController::class, 'check_login']);
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/register', [AuthController::class, 'check_register']);
 
+Route::get('/lists/peserta', [AuthController::class, 'lists'])->name('lists.peserta');
+
 Route::middleware('auth')->group(function(){
     Route::get('/profil', [ProfilController::class, 'index'])->name('profil');
     Route::get('/inbox', [ProfilController::class, 'inbox'])->name('inbox');

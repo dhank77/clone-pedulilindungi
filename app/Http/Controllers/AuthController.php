@@ -61,4 +61,11 @@ class AuthController extends Controller
             ]);
         }
     }
+
+    public function lists()
+    {
+        $peserta = User::orderBy('id', 'desc')->paginate(5);
+
+        return inertia('Auth/Lists', compact('peserta'));
+    }
 }
