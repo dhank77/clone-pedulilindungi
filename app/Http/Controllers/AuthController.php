@@ -64,8 +64,23 @@ class AuthController extends Controller
 
     public function lists()
     {
-        $peserta = User::orderBy('id', 'desc')->paginate(5);
+        $sc = request('search');
+        $page = request('show') ?? 5;
+        $peserta = User::orderBy('id', 'desc')
+                ->when($sc, function($qr, $sc){
+                    $qr->where('name', 'LIKE', "%$sc%");
+                })
+                ->paginate($page);
+
+        $peserta->appends(request()->except(['page']));
 
         return inertia('Auth/Lists', compact('peserta'));
+    }
+
+    public function json()
+    {
+        $peserta = User::orderBy('id', 'desc')->paginate(5);
+
+        return response()->json($peserta);
     }
 }

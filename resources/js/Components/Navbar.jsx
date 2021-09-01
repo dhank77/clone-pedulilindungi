@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
     const { user } = usePage().props;
+    const {url} = usePage();
 
     return (
         <div className="border-b border-gray-300 bg-white">
@@ -31,7 +32,7 @@ export default function Navbar() {
                         <Link className="px-3 py-5 text-gray-700 hover:text-blue-300" href="/">Beranda</Link>
                         <Link className="px-3 py-5 text-gray-700 hover:text-blue-300" href="#">Tentang</Link>
                         <Link className="px-3 py-5 text-gray-700 hover:text-blue-300" href="#">Cara Kerja</Link>
-                        <Link className="px-3 py-5 text-gray-700 hover:text-blue-300" href={route('lists.peserta')}>Peserta Vaksinasi</Link>
+                        <Link className={`${url == '/lists/peserta' ? 'text-blue-500' : 'text-gray-700'} px-3 py-5 hover:text-blue-300`} href={route('lists.peserta')}>Peserta Vaksinasi</Link>
                     </div>
                     {user ?
                         <Menu as="div" className="flex flex-col lg:flex-row items-center relative">
